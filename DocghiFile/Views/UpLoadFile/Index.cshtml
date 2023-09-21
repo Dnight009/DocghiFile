@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+<form action="/UploadFile/Upload" method="post" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label for="formFile" class="form-label">Hinhf Anhr</label>
+        <input class="form-control" type="file" name="image">
+    </div>
+    <div class="mb-3">
+        <label for="formFileMultiple" class="form-label">Taif Lieeuj</label>
+        <input class="form-control" type="file" name="document" multiple>
+    </div>
+    <button type="submit" class="btn btn-primary">Upload</button>
+
+    </div>
+</form>
+
+
